@@ -1,0 +1,401 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #5214FF;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+  background-color: #5214FF;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+}
+
+header .navbar {
+  float: right;
+  list-style-type: none;
+  padding: 0;
+}
+
+header .navbar a {
+  margin-left: 20px;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease; /* Ajout de la transition pour la transformation */
+  text-decoration: none;
+  position: relative;
+  padding: 0 5px; /* Ajoutez un peu d'espace pour la transition */
+}
+
+header .navbar a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px; /* Positionnez le point juste en dessous du lien */
+  left: 50%; /* Centrez horizontalement */
+  transform: translateX(-50%) scaleX(0); /* Centrage et mise à l'échelle initiale */
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%; /* Rend le point rond */
+  transition: transform 0.3s ease; /* Animation douce lors de la survol */
+  bottom: -10px;
+}
+
+header .navbar a:hover::before {
+  transform: translateX(-50%) scaleX(1); /* Rend le point visible lors de la survol */
+  bottom: -10px;
+}
+
+header h1 {
+  text-align: start;
+  padding-top: 80px;
+}
+
+header .boutonVoirPlus {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  /* centrage du bouton */
+  text-align: center;
+  padding: 10px 20px;
+}
+
+/* Positionnement du logo et des images rondes */
+header .logo {
+  position: absolute;
+  z-index: 3;
+  width: 180px;
+  padding: 10px;
+}
+
+header>img:nth-of-type(2) {
+  position: absolute;
+  bottom: 42%;
+  left: 52%;
+  z-index: 1;
+  width: 45%;
+}
+
+header>img:nth-of-type(3) {
+  position: absolute;
+  top: 20%;
+  right: 52%;
+}
+
+header .navbar,
+header h1,
+header .boutonVoirPlus {
+  z-index: 2;
+  position: relative;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Agrandir Regular', sans-serif;
+  font-size: 25px;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+.titre {
+  font-family: 'GLD Display', sans-serif;
+  font-size: 157px;
+  z-index: 2;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.titre1 {
+  max-width: 60%;
+  margin-left: 7%;
+  width: 60%;
+}
+
+header .titre2 {
+  max-width: 60%;
+  margin-left: 48%;
+  bottom: 140px;
+  text-align: end;
+  margin-right: 7%;
+}
+
+header .espace1 {
+  bottom: 30px;
+  position: relative;
+}
+
+.titre .noir {
+  color: black;
+}
+
+.titre .blanc {
+  color: white;
+}
+
+.rectangle {
+  background-color: #FF0921;
+  z-index: 1;
+  width: 460px;
+  height: 80px;
+  position: relative;
+  bottom: 175px;
+  border-radius: 10px;
+  position: absolute;
+  left: 58.5%;
+  transition: all 0.3s ease;
+}
+
+.boutonVoirPlus {
+  font-family: 'Porter Sans Block', sans-serif;
+  font-size: 47px;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  padding: 2px 12px;
+  z-index: 2;
+}
+
+
+
+.navProjSection {
+  width: 100%; 
+}
+
+.projetsNav {
+  text-align: center; 
+  position: relative;  
+  width: 100%;
+}
+
+.projetsUl {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; 
+}
+
+.projetsUl .projetItem {
+  font-size: 5em; 
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;  
+  color: white;
+  border-bottom: 0.1em solid black;
+  padding: 2% 0;  
+  z-index: 0;  
+  transition: opacity 0.3s, max-height 0.3s;
+}
+
+.projet1, .projet2, .projet3, .projet4 {
+  margin-left: 50%;
+}
+
+.annee1, .annee2, .annee3, .annee4 {
+  margin-right: 10%;
+}
+
+.projetsUl .projetItem:first-child {
+  border-top: 0.1em solid black;  
+}
+
+.imageProjets {
+  position: absolute;
+  width: 30%;
+  right: 55%;
+  z-index: 1;  
+}
+
+.voirPlusProjets {
+  display: block;
+  margin-top: 2em;
+  width: 1em;
+}
+
+.titreProjets {
+  transform: rotate(-6.18deg);
+  margin-bottom: 10%;
+  height: 110%;
+}
+
+.liImage {
+  border-top: 0.1em solid black;
+  border-bottom: 0.1em solid black;
+
+  width: 100vw;
+  overflow: hidden;
+  max-height: 10em;
+}
+
+
+.liImage img {
+  width: 100%; 
+  height: auto;
+  display: block;
+  margin: auto;
+  transition: width 0.3s, height 0.3s;
+}
+
+.rotate {
+  transform: rotate(-23.29deg);
+  transition: width 0.3s, height 0.3s;
+  position: absolute;
+  bottom: 60px;
+  z-index: 2;
+  transition: all 0.3s ease;
+  transform-origin: center bottom;
+}
+
+header .boutonVoirPlus {
+  float: inline-end;
+  margin-right: 10%;
+  bottom: 180px;
+}
+
+.boutonVoirPlus:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+.boutonVoirPlus:hover + .rectangle {
+  transition: all 0.3s ease;
+  height: 60px;
+}
+
+.travaillonsEnsemble {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.travaillonsEnsemble .container {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.travaillonsEnsemble p {
+  white-space: nowrap;
+  font-family: 'GLD Display', sans-serif;
+  color: white;
+  font-size: 130px;
+}
+
+.travaillonsEnsemble .txtAnimDroite {
+  animation: scrollRight 30s linear infinite;
+}
+
+.travaillonsEnsemble .txtAnimGauche {
+  animation: scrollLeft 30s linear infinite;
+}
+
+/* Animation pour le premier texte défilant vers la droite */
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Animation pour le deuxième texte défilant vers la gauche */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.travaillonsEnsemble .email {
+  font-family: 'Agrandir Regular', sans-serif;
+  font-size: 45px;
+  color: #ffd700;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.travaillonsEnsemble:hover {
+  cursor: pointer;
+}
+
+/*
+.travaillonsEnsemble img {
+  z-index: 1;
+  position: absolute;
+}
+
+.travaillonsEnsemble > img:nth-of-type(1) {
+  position: absolute;
+}
+
+.travaillonsEnsemble > img:nth-of-type(2) {
+  position: absolute;
+  left: 80%;
+  top: 370%;
+} */
+
+footer {
+  background-color: black !important;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+footer div img {
+  width: 30%;
+  margin-right: 20px;
+}
+
+footer p {
+  font-family: 'Agrandir Regular', sans-serif;
+  font-size: 25px;
+}
+
+footer .logo_nom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 7%;
+}
+
+footer .adresse {
+  display: flex;
+  flex-direction: row;
+  margin-right: 7%;
+  align-items: center;
+}
+
+footer .adresse img {
+  width: 50px;
+}
+
+footer .adresse p {
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 1516px) {
+  body {
+      max-width: 1515px;
+      margin: 0 auto; /* Centre le contenu horizontalement */
+  }
+  
+  .rectangle {
+    bottom: 85px;
+    margin-left: 19px;
+  }
+}

@@ -1,0 +1,247 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+    /* 14px par défaut */
+    background-color: #1D1D1B;
+    color: white;
+    overflow-x: hidden;
+    font-family: 'Agrandir Regular', sans-serif;
+}
+
+header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3vw 3vw 0 3vw;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+header .logo {
+    position: relative;
+    z-index: 3;
+    width: 10vw;
+    margin: 3vw;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+
+}
+
+.navbar a {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    margin: 0 1vw;
+    font-size: 2vw;
+    font-family: 'Agrandir Regular', sans-serif;
+    font-weight: bold;
+
+}
+
+.navbar a::before {
+    content: "";
+    position: absolute;
+    top: 2.5vw;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 1vw;
+    height: 1vw;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+.navbar a:hover::before {
+    transform: translateX(-50%) scaleX(1);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer {
+    background-color: #5214FF !important;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p {
+    font-family: 'Agrandir Regular', sans-serif;
+    font-size: 1.5vw;
+}
+
+footer .logo_nom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer .logo_nom img {
+    width: 20vw
+}
+
+footer .adresse {
+    display: flex;
+    flex-direction: row;
+    margin-right: 3vw;
+    align-items: center;
+}
+
+footer .adresse img {
+    width: 3vw;
+    margin-right: 1vw;
+}
+
+footer .adresse p {
+    margin-right: 1.5vw;
+}
+
+.partie1 {
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 5vw;
+    margin-top: 3vw;
+    margin: 0 7%;
+}
+
+.partie1 p {
+    font-size: 3vw;
+    line-height: 1.2;
+    margin: 1.5vw 7vw;
+    max-width: 60vw;
+}
+
+.partie1 img {
+    width: 100vw;
+    margin-top: 3vw;
+}
+
+.partie2 .container {
+    display: flex;
+    margin: 3vw 7vw;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+}
+
+.partie2 .container .titres,
+.partie2 .container p {
+    flex: 1;
+}
+
+.partie2 .container p {
+    font-size: 3.2vw;
+    line-height: 1.3;
+}
+
+.partie2 .container .titres {
+    font-size: 15vw;
+    font-family: 'GLD Display', sans-serif;
+    color: #FFD700;
+}
+
+.partie2 .conteneurImages {
+    display: flex;
+    margin: 0 7vw;
+}
+
+.partie2 .conteneurImages img {
+    flex: 1;
+    width: 30vw;
+}
+
+.partie2 .conteneurImages .deuxiemeImage {
+    z-index: 2;
+}
+
+.premiereImage {
+    margin-right: 2vw;
+}
+
+.premiereImageProjet1 {
+    z-index: 2;
+}
+
+.deuxiemeImageDessous {
+    z-index: 0 !important;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.suivant {
+    font-size: 26vw;
+    font-family: 'GLD Display', sans-serif;
+    text-align: center;
+    transform: rotate(-11.5deg);
+    margin-top: 6vw;
+    margin-bottom: 11vw;
+    z-index: 2;
+    position: relative;
+}
+
+.precedent {
+    z-index: 2;
+    position: relative;
+    font-size: 6vw;
+    font-family: 'GLD Display', sans-serif;
+    text-align: end;
+    transform: rotate(11.5deg);
+    bottom: 10vw;
+}
+
+.serpentin {
+    position: absolute;
+    left: 8vw;
+    z-index: 1;
+    width: 80vw;
+}
+
+.imageFond {
+    position: absolute;
+    left: 55vw;
+    width: 45vw;
+    bottom: 9vw;
+}
+
+.imageFond2 {
+    position: absolute;
+    left: 20vw;
+    bottom: -97vw;
+    width: 1000px;
+    z-index: 1;
+}
+
+.imageFond3 {
+    position: absolute;
+    bottom: -175vw;
+    width: 60vw;
+    left: -5vw;
+    z-index: -10;
+}

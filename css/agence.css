@@ -1,0 +1,175 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+    /* 14px par défaut */
+    font-family: 'Noto sans', sans-serif;
+    background-color: #1D1D1B;
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    position: relative;
+    margin: 3vw 3vw;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+header .logo {
+    position: absolute;
+    z-index: 3;
+    width: 15vw;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.navbar a {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    margin: 0 1vw;
+    font-size: 2vw;
+    font-family: 'Agrandir Regular', sans-serif;
+    font-weight: bold;
+
+}
+
+.navbar a::before {
+    content: "";
+    position: absolute;
+    top: 2.5vw;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 1vw;
+    height: 1vw;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+.navbar a:hover::before {
+    transform: translateX(-50%) scaleX(1);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.titre {
+    font-family: 'GLD Display', sans-serif;
+    font-size: 13vw;
+    z-index: 2;
+    margin: 0 30vw;
+    position: relative;
+    color: white;
+    text-align: start;
+}
+
+header .rondFeu {
+    position: absolute;
+    left: 30vw;
+    bottom: 2vh;
+}
+
+.presentation {
+    display: flex;
+    align-items: center;
+}
+
+.presentation p {
+    font-family: 'Agrandir Regular', sans-serif;
+    font-size: 2.8vw;
+    margin: 5vw 7vw;
+    line-height: 1.3;
+}
+
+.presentation .bigLogo,
+.presentation p {
+    flex: 1;
+}
+
+.presentation .bigLogo {
+    width: 45vw;
+    margin-left: 3vw;
+}
+
+.rondFeu {
+    margin-left: 50vw;
+    width: 10vw;
+}
+
+.equipier {
+    margin: 6vw 7vw 10vw 7vw;
+}
+
+.equipier h2 {
+    font-family: 'Agrandir GrandHeavy', sans-serif;
+    font-size: 8vw;
+    margin-bottom: 4vw;
+}
+
+.equipier p {
+    font-family: 'Agrandir Regular', sans-serif;
+    font-size: 3vw;
+    max-width: 40vw;
+}
+
+.equipierDroite {
+    margin-left: 55vw;
+}
+
+footer {
+    background-color: #5214FF !important;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p {
+    font-family: 'Agrandir Regular', sans-serif;
+    font-size: 1.5vw;
+}
+
+footer .logo_nom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer .logo_nom img {
+    width: 20vw
+}
+
+footer .adresse {
+    display: flex;
+    flex-direction: row;
+    margin-right: 3vw;
+    align-items: center;
+}
+
+footer .adresse img {
+    width: 3vw;
+    margin-right: 1vw;
+}
+
+footer .adresse p {
+    margin-right: 1.5vw;
+}

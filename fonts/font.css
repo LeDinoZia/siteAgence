@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Porter Sans Block';
+    src: url('porter-sans-inline-block-webfont.ttf') format('woff2'),
+        url('porter-sans-inline-block.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'GLD Display';
+    src: url('GLDDisplay-Black.ttf') format('ttf'),
+        url('GLDDisplay-Black.woff') format('woff'),
+        url('GLDDisplay-Black.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Agrandir Regular';
+    src: url('Agrandir-Regular.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Agrandir GrandHeavy';
+    src: url('Agrandir-GrandHeavy.otf') format('opentype');
+}
