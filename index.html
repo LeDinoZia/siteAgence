@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="fonts/font.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <meta name="description" content="Web Forgeurs est une agence de développement web spécialisée dans la création de sites web.">
+    <title>Web Forgeurs</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="public/logo-wf-1@2x.png" alt="Logo Web Forgeurs">
+        <nav class="navbar">
+            <a href="agence.html">Agence</a>
+            <a href="#projets">Projets</a>
+            <a href="#travaillons">Contact</a>
+        </nav>
+        <h1 class="titre titre1"><span class="noir titreH1">FORGEONS</span> <span class="blanc espace1">ENSEMBLE</span>
+        </h1>
+        <h1 class="titre titre2"><span class="blanc">LE WEB DE</span> <span class="noir espace1">DEMAIN !</span></h1>
+        <div class="VoirPlus">
+            <a class="boutonVoirPlus" href="agence.html">VOIR PLUS</a>
+            <div class="rectangle"></div>
+        </div>
+        <img src="public/blend-group-3.svg">
+        <img src="public/blend-group-6.svg">
+    </header>
+
+    <section class="navProjSection" id="projets">
+        <h2 class="titre titreProjets">PROJETS</h2>
+        <nav class="projetsNav">
+            <img class="imageProjets" src="public\rectangle-19@2x.png" alt="Fleurs" />
+            <ul class="projetsUl">
+                <li class="projetItem">
+                    <span class="projet1">Ocianica</span>
+                    <span class="annee1">2023</span>
+                </li>
+                <li class="projetItem">
+                    <span class="projet2">ComparAuto</span>
+                    <span class="annee1">2023</span>
+                </li>
+                <li class="projetItem">
+                    <span class="projet3">Zoopedia</span>
+                    <span class="annee1">2023</span>
+                </li>
+                <li class="projetItem">
+                    <span class="projet4">Les Couteaux du Marais</span>
+                    <span class="annee1">2023</span>
+                </li>
+            </ul>
+        </nav>
+        <a class="boutonVoirPlus voirPlusProjets" href="">VOIR PLUS</a>
+    </section>
+
+    <script src="js\navProjets.js"></script>
+
+    <section class="travaillonsEnsemble" id="travaillons">
+        <div class="container">
+            <p class="txtAnimDroite">TRAVAILLONS ENSEMBLE&nbsp</p>
+            <p class="txtAnimDroite">TRAVAILLONS ENSEMBLE&nbsp</p>
+            <p class="txtAnimDroite">TRAVAILLONS ENSEMBLE&nbsp</p>
+        </div>
+        <div class="container">
+            <p class="txtAnimGauche">TRAVAILLONS ENSEMBLE&nbsp</p>
+            <p class="txtAnimGauche">TRAVAILLONS ENSEMBLE&nbsp</p>
+            <p class="txtAnimGauche">TRAVAILLONS ENSEMBLE&nbsp</p>
+        </div>
+        <div class="container">
+            <p class="txtAnimDroite">TRAVAILLONS ENSEMBLE&nbsp</p>
+            <p class="txtAnimDroite">TRAVAILLONS ENSEMBLE&nbsp</p>
+            <p class="txtAnimDroite">TRAVAILLONS ENSEMBLE&nbsp</p>
+        </div>
+        <div class="container">
+            <p class="txtAnimGauche">TRAVAILLONS ENSEMBLE&nbsp</p>
+            <p class="txtAnimGauche">TRAVAILLONS ENSEMBLE&nbsp</p>
+            <p class="txtAnimGauche">TRAVAILLONS ENSEMBLE&nbsp</p>
+        </div>
+
+        <p class="email">webforgeurs@gmail.com</p>
+    </section>
+
+    <footer>
+        <div class="logo_nom">
+            <img src="public/logo-wf-11@2x.png">
+            <p> 2023 . Webforgeurs</p>
+        </div>
+        <div class="adresse">
+            <p>44 Av. Albert Einstein, 17000 La Rochelle</p>
+            <img src="public/logo_facebook.png">
+            <img src="public/logo_insta.png">
+        </div>
+    </footer>
+</body>
+
+<script>
+    document.querySelector('.travaillonsEnsemble').addEventListener('click', function () {
+        window.location.href = "mailto:webforgeurs@gmail.com?subject=Demande de collaboration";
+    });
+</script>
+
+</html>
